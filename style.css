@@ -1,0 +1,317 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
+
+/* NAVIGATION BLOCK */
+
+
+.navigation {
+    background-color:white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 97%;
+    height: 90px;
+    margin: 0px auto;
+    border-radius: 0 0 .5rem .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+
+.nav-logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+
+.nav-logo-box-svg{
+    height: 40%;
+    margin-left: 15px;
+    color: rgb(75 85 99);
+    cursor: pointer;
+}
+
+
+.nav-logo-link {
+   
+    font-weight:600;
+    text-decoration: none;
+    color:rgb(59 130 246);
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+.nav-logo-text{
+    font-size: 16px;
+}
+
+
+.nav-info {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.nav-info-button {
+    margin-left: 20px;
+    border:none;
+    border-radius: 9px;
+    background-color:rgb(31,41,55);
+    color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    min-width: 70px;
+    font-size: 16px;
+}
+
+
+.nav-info-button-svg{
+    margin-right:10px;
+    height: 100%;
+    width: 30%;
+}
+
+
+.nav-info-button:hover{
+    transition-duration:0.3s;
+    background-color:rgb(55, 65, 81);
+    cursor: pointer;
+}
+
+
+.nav-info-input{
+    border: 2px solid #e5e7eb;
+    border-radius: 7px;
+    font-size: 14px;
+    height: 40px;
+    max-width: 224%;
+   
+}
+
+
+.nav-info-input-svg{
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    display: inline-block;
+    margin-top: 3px;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+   
+}
+
+
+.nav-info-input:active{
+    border: 2px solid black;
+}
+
+
+.nav-link-image {
+    height: 33%;
+}
+
+
+.nav-links {
+    width: 30%;
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:30px;
+}
+
+
+
+
+.nav-logo-box{
+    width: 75%;
+    height:80%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CONTENT BLOCK */
+
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 97%;
+    height: 80%;
+    margin: 0px auto;
+    margin-top: 50px;
+    gap: 35px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.small-card{
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 50%;
+    flex: 0 0 calc(50% - 8px);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.card-text{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+p{
+    font-weight: normal;
+}
+
+.align-icon-img{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.weather-left{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 60%;
+}
+
+/* Weather main */
+.currentweather{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+select{
+    border: 2px solid #e5e7eb;
+    border-radius: 7px;
+    height: 20px;
+}
+select::placeholder{
+    border: black;
+}
+.align-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.align-selector{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px;
+}
+/*weather info*/
+
+.bold-text{
+    font-weight: bold;
+    font-size: 40px;
+}
+.weather-info-icons{
+    width: 5%;
+}
+
+.info-about-weather {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+/*sun & moon summary*/
+.sun-moon-svg{
+    width: 30%;
+}
+
+.sun-moon-align{
+    display: flex;
+    flex-direction: row;
+}
+
+.sun-moon-images{
+    width: 10%;
+}
+
+.sun-icon{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sunset-sunrise-img{
+    width: 20px;
+}
+
+.align-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.sun-moon-time{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*Weekly forecast*/
+.week-schedule{
+    width: 40%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 9px;
+}
+
+.buttons-schedule{
+    display: flex;
+    height: 3%;
+    gap: 1em;
+    margin: 20px;
+}
+
+.button-schedule{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-schedule:active{
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
